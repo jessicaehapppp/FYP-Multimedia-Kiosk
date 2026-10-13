@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FYP Multimedia Kiosk</title>
+
+    <link rel="stylesheet" href="css\style.css">
+    <script src="js\scirpt.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>FYP MULTIMEDIA SHOWCASE</h1>
+        <p>Discover Our Final Year Projects</p>
+    </header>
+
+    <main class="container">
+
+        <!-- MAIN MENU -->
+        <section id="homePage">
+            <h2>Welcome to Our Showcase</h2>
+            <p class="intro">
+                Select a project below to explore its details.
+            </p>
+
+            <div id="projectGrid" class="project-grid"></div>
+        </section>
+
+        <!-- PROJECT DETAILS -->
+        <section id="detailPage" hidden>
+            <button id="backButton" class="secondary">
+                Back to Main Menu
+            </button>
+
+            <h2 id="detailTitle"></h2>
+
+            <img id="detailPoster"
+                 class="detail-poster"
+                 alt="Project poster">
+
+            <h3>Project Description</h3>
+            <p id="detailDescription"></p>
+
+            <button id="playButton">
+                Play Project Video
+            </button>
+        </section>
+
+        <!-- VIDEO POP-UP -->
+        <div id="videoModal" class="modal" hidden>
+            <div class="modal-content">
+
+                <button id="closeVideo" class="close-button">
+                    Close Video
+                </button>
+
+                <h2 id="videoTitle">Project Video</h2>
+
+                <video id="videoPlayer" controls playsinline>
+                    Your browser does not support HTML video.
+                </video>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>DEC50202 Creative Multimedia | FYP Showcase</p>
+    </footer>
+
+</body>
+</html>
